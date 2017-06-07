@@ -18,4 +18,8 @@ SantaBot_config = {
     # Maximum amout of bytes to receive from socket (1024-4096)
     'socket_buffer_size': 1024,
 
+    # If set true, the log will be saved to a txt file
+    'save_log': True,
+    'save_log_filename': 'data/SantaBot/log.txt'
+
 } # End of Config

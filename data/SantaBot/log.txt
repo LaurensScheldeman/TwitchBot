@@ -1,1 +1,1 @@
-[14:3] lovely_santa: !randomNumber 5 3[14:3] lovely_santa: !ping[14:4] lovely_santa: !randomNumber 5
+[1:20] lovely_santa: !bankheist 500

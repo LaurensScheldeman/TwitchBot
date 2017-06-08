@@ -2,7 +2,7 @@ import time
 import string
 
 #from src.config.config import *
-from src.config.config_commands import *
+from src.config.config_commands import commands_config as commands
 
 import importlib
 

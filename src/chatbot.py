@@ -7,15 +7,15 @@ import string
 
 import lib.irc as irc_
 import lib.fileHandler as fileHandler
-import lib.commands.commands_functions as commands
+import lib.commands_functions as commands
 
 
-class SantaBot:
+class ChatBot:
 
     def __init__(self, config):
         self.__config = config
         self.__irc = irc_.irc(config)
-        self.__socket = self.__irc.get_socket()
+        self.__config['irc'] = self.__irc
 
         # Prepare file to save log
         if self.__config['save_log']:

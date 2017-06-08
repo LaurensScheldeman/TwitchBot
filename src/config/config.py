@@ -1,6 +1,5 @@
-global config
 
-SantaBot_config = {
+config = {
 
     # Details required to login to twitch IRC server
     'server': 'irc.twitch.tv',
@@ -10,7 +9,7 @@ SantaBot_config = {
 
     # Channel to join
     'channel': 'lovely_santa',
-    'entering_message': '<santaBot> succesfully joined the channel.',
+    'entering_message': '<santaBot> successfully joined the channel.',
 
     # If set to true will display any debug data in console
     'debug': True,
@@ -20,6 +19,6 @@ SantaBot_config = {
 
     # If set true, the log will be saved to a txt file
     'save_log': True,
-    'save_log_filename': 'data/SantaBot/log.txt'
+    'save_log_filename': 'data/SantaBot/log.txt',
 
 } # End of Config

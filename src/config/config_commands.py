@@ -1,4 +1,3 @@
-from src.config.config import *
 
 # To add a command:
 #
@@ -13,7 +12,7 @@ from src.config.config import *
 # If 'return' == 'command' you need to add a file src/lib/commands/<command>.py
 #   with the logic to determin the return and logic of the command
 
-commands = {
+commands_config = {
 
     '!ping': {
         'cooldown': 30,
@@ -21,11 +20,19 @@ commands = {
     },
 
     '!randomNumber': {
-        'cooldown': 30,
+        'cooldown': 10,
         'return': 'command',
         'argc': 2,
         'arg_username': False,
-        'usage': '!random <min> <max>'
+        'usage': '!random <min> <max> (only full integers)'
+    },
+
+    '!bankheist': {
+        'cooldown': 0, # Controlled by config_bankheist.py
+        'return': 'command',
+        'argc': 1,
+        'arg_username': True,
+        'usage': '!bankheist <bet> (full integer)'
     }
 
-} # End of SantaBot_commands
+} # End of commands

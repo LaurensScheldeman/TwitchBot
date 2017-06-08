@@ -15,7 +15,7 @@ SantaBot_config = {
     # If set to true will display any debug data in console
     'debug': True,
 
-    # Maximum amout of bytes to receive from socket (1024-4096)
+    # Maximum amount of bytes to receive from socket (1024-4096)
     'socket_buffer_size': 1024,
 
     # If set true, the log will be saved to a txt file

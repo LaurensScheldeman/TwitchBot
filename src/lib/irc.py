@@ -43,9 +43,12 @@ class irc:
             return "PING", "PONG"
 
         temp = line.split(":",2)
-        user = temp[1].split("!", 1)[0]
-        message = temp[2]
+        user = u'%s' % temp[1].split("!", 1)[0]
+        message = u'%s' % temp[2].split("\r",1)[0]
         return user, message
+
+    def check_ping_message(self, user, message):
+        return (True if (user == "PING") and (message == "PONG") else False)
 
     def __open_socket(self):
         self.__socket.connect((self.__config['server'], self.__config['port']))

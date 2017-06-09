@@ -16,7 +16,10 @@ class InfiniteTimer():
     def _handle_target(self):
         if self.is_running:
             self.is_running = False
-            self.target(self.target_arguments)
+            if self.target_arguments:
+                self.target(self.target_arguments)
+            else:
+                self.target()
         self._start_timer()
 
     def _start_timer(self):

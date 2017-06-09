@@ -41,7 +41,25 @@ bankheist_config = {
     'entery_message_5': 'Epic crew! We are going to hit the @level_5_bank_name@ guys! Gear up and get ready to head out.',
 
     ###############################
-    # SECTION X : COOLDOWN TIMER  #
+    # SECTION 3: GAME OUTCOMES    #
+    ###############################
+
+    'heist_start': 'Alright guys, check your guns. We are storming into the @bankname@ through all entrances. Let\'s get the cash and get out before the cops get here.',
+
+    # Single user heist
+    'single_succes': '@user@ executed the heist flawlessly, sneaking into the @bankname@ through the back entrance and looting @totalwinamount@ @currency_name@ from the vault.',
+    'single_fail': 'Local security caught @user@ trying to sneak into the @bankname@ through the back entrance and opened fire.',
+
+    # Multi user heist
+    'multi_succes_100%': 'The execution was flawless, in and out before the first cop arrived on scene. The whole crew got away scoring @totalwinamount@ @currency_name@ from the vault.',
+    'multi_succes_34-99%': 'The crew suffered a few losses engaging the local security team. The remaining crew got away scoring @totalwinamount@ @currency_name@ from the vault before backup arrived.',
+    'multi_succes_1-33%': 'The crew suffered major losses as they engaged the SWAT backup. The remaining crew barely made it scoring @totalwinamount@ @currency_name@ from the vault.',
+    'multi_fail': 'SWAT teams nearby stormed the bank and killed the entire crew. Not a single soul survived...',
+
+    'heist_outcome': 'The heist peyouts are:',
+
+    ###############################
+    # SECTION 4 : COOLDOWN TIMER  #
     ###############################
     'cooldown_time': 15, # Time between game outcome and start of next game entery in minutes
     'cooldown_message': 'The cops are on high alert afther last job, we hav to lay low for a bit. Call me again afther @currect_cooldown@ minutes.',

@@ -5,21 +5,22 @@ Developed by Laurens Scheldeman <laurens.scheldeman@gmail.com>
 """
 import string
 
-import lib.irc as irc_
-import lib.fileHandler as fileHandler
-import lib.commands_functions as commands
+import src.lib.irc as irc_
+import src.lib.fileHandler as fileHandler
+import src.lib.commands_functions as commands
 
 
-class ChatBot:
+class SantaBot:
 
     def __init__(self, config):
         self.__config = config
-        self.__irc = irc_.irc(config)
-        self.__config['irc'] = self.__irc
 
         # Prepare file to save log
         if self.__config['save_log']:
             fileHandler.create_empty_file(self.__config['save_log_filename'])
+
+        self.__irc = irc_.irc(config)
+        self.__config['irc'] = self.__irc
 
     def run(self):
         self.__irc.join_channel()

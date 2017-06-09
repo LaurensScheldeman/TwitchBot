@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from src.chatbot import ChatBot
+from src.santaBot import SantaBot
 from src.config.config import config
 
-bot = ChatBot(config).run()
+bot = SantaBot(config).run()

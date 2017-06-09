@@ -3,8 +3,8 @@ import string
 from src.lib.timers import InfiniteTimer
 import src.lib.irc as irc_
 
-from src.config.config import config as config
-from src.config.config_bankheist import bankheist_config as bankheist_config
+from src.config.config import config
+from src.config.config_bankheist import bankheist_config
 
 
 def bankheist(args):
@@ -77,7 +77,11 @@ def decode_message(message, user = None):
                 result += bankheist_config['level_5_bank_name']
 
         elif key in bankheist_config:
-            result += str(bankheist_config[key])
+            result_to_add = bankheist_config[key]
+            if type(result_to_add) in [type(0), type(0L)]:
+                result += int_to_string(result_to_add)
+            else:
+                result += result_to_add
 
         else: # unknown key
             result += ('@' + key + '@')
@@ -120,3 +124,14 @@ def bankheist_outcome():
 def bankheist_end_of_cooldown():
     # End of cooldown
     a=1
+
+def int_to_string(x):
+    if type(x) not in [type(0), type(0L)]:
+        raise TypeError("Parameter must be an integer.")
+    if x < 0:
+        return '-' + intWithCommas(-x)
+    result = ''
+    while x >= 1000:
+        x, r = divmod(x, 1000)
+        result = ",%03d%s" % (r, result)
+    return "%d%s" % (x, result)

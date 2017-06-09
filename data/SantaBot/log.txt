@@ -1,6 +1,12 @@
-[9:49] lovely_santa: <santaBot> successfully joined the channel.
-[9:49] lovely_santa: !randomNumber 1 5
-[9:49] lovely_santa: 1
-[9:49] lovely_santa: !bankheist 500
-[9:49] lovely_santa: lovely_santa has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5000 shreckles.
-[9:51] lovely_santa: Alright guys, check your guns. We are storming into the ShredNation Municipal Bank through all entrances. Let's get the cash and get out before the cops get here.
+[11:5] lovely_santa: <santaBot> successfully joined the channel.
+[11:5] lovely_santa: !bankheist 500
+[11:5] lovely_santa: lovely_santa has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5,000 shreckles.
+[11:5] lovely_santa: !randomNumber 1 a
+[11:5] lovely_santa: Please use the command correctly: !random <min> <max> (only full integers)
+[11:5] lovely_santa: !randomNumber 1 10
+[11:5] lovely_santa: !ping
+[11:5] lovely_santa: !pong
+[11:6] lovely_santa: !ping
+[11:7] lovely_santa: !randomNumber 1 1
+[11:7] lovely_santa: 1
+[11:7] lovely_santa: Alright guys, check your guns. We are storming into the ShredNation Municipal Bank through all entrances. Let's get the cash and get out before the cops get here.

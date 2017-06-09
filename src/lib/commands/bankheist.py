@@ -8,6 +8,9 @@ from src.config.config_bankheist import bankheist_config
 
 
 def bankheist(args):
+    if not bankheist_config['enable_bankheist']:
+        return ""
+
     # User wants to join a bankheist
     user = args[0]
     try:

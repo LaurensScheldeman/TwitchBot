@@ -1,4 +1,6 @@
 
+from src.config.config_bankheist import bankheist_config
+
 # To add a command:
 #
 #   '!<command>': {
@@ -24,15 +26,16 @@ commands_config = {
         'return': 'command',
         'argc': 2,
         'arg_username': False,
-        'usage': '!random <min> <max> (only full integers)'
+        'usage': '!randomNumber [min] [max] (only full integers)'
     },
 
-    '!bankheist': {
-        'cooldown': 0, # Controlled by config_bankheist.py
+    # Bankheist
+    bankheist_config['activation_command']: {
+        'cooldown': 0, # Time between two persons that enter, should be zero.
         'return': 'command',
         'argc': 1,
         'arg_username': True,
-        'usage': '!bankheist <bet> (full integer)'
+        'usage': '!bankheist [bet] (full integer)'
     }
 
 } # End of commands

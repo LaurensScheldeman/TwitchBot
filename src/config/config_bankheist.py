@@ -1,12 +1,16 @@
 
+from src.config.config_pointsystem import pointsystem_config
+
 bankheist_config = {
+
+    'enable_bankheist': True, # Global setting to enable/disable bankheist minigame
 
     ###############################
     # SECTION 1 : ENTERY OF HEIST #
     ###############################
     'activation_command': '!bankheist', # This need to be the same as in config_commands.py
     'max_bet': 5000, # Set to zero for unlimited
-    'currency_name': "shreckles",
+    'currency_name': pointsystem_config['currency_name'],
     'time_to_enter': 120, # Time (in seconds) between first entery and start of the heist
 
     # These messages will be visible together with the entery_message_1 (see further below)
@@ -30,10 +34,11 @@ bankheist_config = {
     # Make sure each level has a greater max user limit than the level before
     # level 1 must have at least 1 as max user
     'level_1_max_users': 1,
-    'level_2_max_users': 4,
-    'level_3_max_users': 7,
-    'level_4_max_users': 9,
+    'level_2_max_users': 2,
+    'level_3_max_users': 5,
+    'level_4_max_users': 10,
 
+    # Next level heist message
     'entery_message_1': '@user@ has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in!',
     'entery_message_2': 'With this crew, we can now hit the @level_2_bank_name@. Lets see if we can get a bigger crew to hit the @level_3_bank_name@!',
     'entery_message_3': 'Oh yeah! With this crew, we can now hit the @level_3_bank_name@. Lets see if we can get a bigger crew to hit the @level_4_bank_name@!',
@@ -57,6 +62,25 @@ bankheist_config = {
     'multi_fail': 'SWAT teams nearby stormed the bank and killed the entire crew. Not a single soul survived...',
 
     'heist_outcome': 'The heist peyouts are:',
+
+    ###############################
+    # SECTION 4: PAYOUT RATES     #
+    ###############################
+
+    # Changes to win (measured in %)
+    'level_1_win': 54,
+    'level_2_win': 48.8,
+    'level_3_win': 42.5,
+    'level_4_win': 38.7,
+    'level_5_win': 32.4,
+
+    # Payout ratios
+    'level_1_win_multiplier': 2,
+    'level_2_win_multiplier': 3,
+    'level_3_win_multiplier': 4,
+    'level_4_win_multiplier': 5,
+    'level_5_win_multiplier': 6,
+
 
     ###############################
     # SECTION 4 : COOLDOWN TIMER  #

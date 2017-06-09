@@ -17,7 +17,10 @@ class SantaBot:
 
         # Prepare file to save log
         if self.__config['save_log']:
-            fileHandler.create_empty_file(self.__config['save_log_filename'])
+            if fileHandler.check_file_exist(self.__config['save_log_filepath']):
+                fileHandler.rename_file(self.__config['save_log_filepath'], self.__config['save_prevlog_filename'])
+            else:
+                fileHandler.create_empty_file(self.__config['save_log_filepath'])
 
         self.__irc = irc_.irc(config)
         self.__config['irc'] = self.__irc
@@ -30,7 +33,7 @@ class SantaBot:
 
             if not self.__irc.check_ping_message(user, message):
                 if self.__config['save_log']:
-                    fileHandler.append_to_file(self.__config['save_log_filename'], user + ": " + message, use_time=True)
+                    fileHandler.append_to_file(self.__config['save_log_filepath'], user + ": " + message, use_time=True)
                 if self.__config['debug']:
                     print(user + ": " + message)
 

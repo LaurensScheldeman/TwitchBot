@@ -34,7 +34,7 @@ class irc:
     def send_message(self, message):
         self.__socket.send("PRIVMSG #" + self.__config['channel'] + " :" + message + "\r\n")
         if self.__config['save_log']:
-            fileHandler.append_to_file(self.__config['save_log_filename'], self.__config['username'] + ": " + message, use_time=True)
+            fileHandler.append_to_file(self.__config['save_log_filepath'], self.__config['username'] + ": " + message, use_time=True)
         if self.__config['debug']:
             print("-- Sent: " + message)
 

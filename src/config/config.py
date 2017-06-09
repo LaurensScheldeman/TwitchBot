@@ -19,6 +19,7 @@ config = {
 
     # If set true, the log will be saved to a txt file
     'save_log': True,
-    'save_log_filename': 'data/SantaBot/log.txt',
+    'save_log_filepath': 'data/SantaBot/current_log.txt',
+    'save_prevlog_filename': 'previous_log.txt'
 
 } # End of Config

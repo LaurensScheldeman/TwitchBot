@@ -1,6 +1,8 @@
 import os
-from datetime import datetime
+import json
+
 import string
+from datetime import datetime
 
 def create_empty_file(filepath):
     # Creates an empty file, override the file if it already exists
@@ -12,6 +14,8 @@ def create_empty_file(filepath):
 
 def rename_file(filepath, new_filename):
     if check_file_exist(filepath):
+        if check_file_exist(os.path.dirname(filepath) + '/' + new_filename):
+            os.remove(os.path.dirname(filepath) + '/' + new_filename)
         os.rename(filepath, os.path.dirname(filepath) + '/' + new_filename)
 
 def append_to_file(filepath, text_to_append, use_date=False, use_time=False):
@@ -39,4 +43,21 @@ def append_to_file(filepath, text_to_append, use_date=False, use_time=False):
         file.write(text_to_append)
 
 def check_file_exist(filepath):
-    return os.path.exists(filepath)
+    return (os.path.isfile(filepath) and os.access(filepath, os.R_OK))
+
+def write_json(filepath, data):
+    if check_file_exist(filepath):
+        with open(filepath, 'w') as f:
+            json.dump(data, f)
+    else:
+        create_empty_file(filepath)
+        with open(filepath, 'w') as f:
+            json.dump(data, f)
+
+def read_json(filepath):
+    if check_file_exist(filepath):
+        with open(filepath, 'r') as f:
+            data = json.load(f)
+    else:
+        data = {}
+    return data

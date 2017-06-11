@@ -7,7 +7,7 @@ class irc:
 
     def __init__(self, config):
         self.__config = config
-        self.__socket = socket.socket()
+        self.__socket = None
         self.__read_data = ""
         self.__message_buffer = []
 
@@ -16,6 +16,11 @@ class irc:
 
     def join_channel(self):
         self.__open_socket()
+        self.__socket.settimeout(None)
+
+        self.__socket.send("PASS " + self.__config['oauth_password'] + "\r\n")
+        self.__socket.send("NICK " + self.__config['username'] + "\r\n")
+        self.__socket.send("JOIN #" + self.__config['channel'] + "\r\n")
 
         read_data = ""
         loading = True
@@ -28,6 +33,8 @@ class irc:
                 loading = (False if "End of /NAMES list" in line else True)
                 if self.__config['debug']:
                     print(line)
+                    if self.__config['save_log']:
+                        fileHandler.append_to_file(self.__config['save_log_filepath'], line, use_time=True)
 
         self.send_message(self.__config['entering_message'])
 
@@ -52,13 +59,20 @@ class irc:
         return user, message
 
     def check_ping_message(self, user, message):
-        return (True if (user == "PING") and (message == "PONG") else False)
+        return True if (user == "PING") and (message == "PONG") else False
 
     def __open_socket(self):
-        self.__socket.connect((self.__config['server'], self.__config['port']))
-        self.__socket.send("PASS " + self.__config['oauth_password'] + "\r\n")
-        self.__socket.send("NICK " + self.__config['username'] + "\r\n")
-        self.__socket.send("JOIN #" + self.__config['channel'] + "\r\n")
+        self.__socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.__socket.settimeout(10)
+
+        try:
+            self.__socket.connect((self.__config['server'], self.__config['port']))
+        except:
+            if self.__config['debug']:
+                print('-- Cannot connect to server (%s:%s).' % (self.__config['server'], self.__config['port']))
+                if self.__config['save_log']:
+                    fileHandler.append_to_file(self.__config['save_log_filepath'], \
+                        '-- Cannot connect to server (%s:%s).' % (self.__config['server'], self.__config['port']), use_time=True)
 
     def __add_buffer(self):
         self.__read_data += self.__socket.recv(self.__config['socket_buffer_size'])
@@ -66,7 +80,7 @@ class irc:
         self.__read_data = self.__message_buffer.pop()
 
     def __check_for_ping(self, line):
-        if "PING" in line:
+        if line[:4] == "PING":
             self.__socket.send(line.replace("PING", "PONG") + "\r\n")
             return True
         return False

@@ -47,6 +47,8 @@ def randomNumber(args):
     try:
         min_ = int(args[0])
         max_ = int(args[1])
+    except ValueError:
+        return "Please use the command correctly: !randomNumber [min] [max]"
 
         if min_ > max_:
             min_ += max_
@@ -58,9 +60,6 @@ def randomNumber(args):
         seed = int((datetime.now() - datetime(1970,1,1)).total_seconds())
         random.seed(seed)
         return str(random.randint(min_, max_))
-	
-    except:
-        return "Please use the command correctly: !randomNumber [min] [max]"
 ```
 
 And now if somebody types `!randomNumber 5 10` into the chat, the bot will respond with a pseudo-random number between 5 and 10.

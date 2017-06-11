@@ -14,7 +14,7 @@ If your command is only going to return a string, ex - `!ping` returns `!pong`, 
 
 ```python
 '!ping': {
-		'return': '!pong',
+    'return': '!pong',
     'cooldown': 30
 }
 ```
@@ -31,9 +31,9 @@ Add the following to the `config_commands` dictionary (located at `src/config/co
 
 ```python
 '!randomNumber': {
-		'return': 'command',
-		'cooldown': 20,
-		'argc': 2
+    'return': 'command',
+    'cooldown': 20,
+    'argc': 2
 }
 ```
 
@@ -60,6 +60,7 @@ def randomNumber(args):
         seed = int((datetime.now() - datetime(1970,1,1)).total_seconds())
         random.seed(seed)
         return str(random.randint(min_, max_))
+	
     except:
         return "Please use the command correctly: " + commands['!randomNumber']['usage']
 ```

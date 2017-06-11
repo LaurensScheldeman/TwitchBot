@@ -43,8 +43,6 @@ And then add the file `src/lib/commands/randomNumber.py` , write the following:
 import random
 from datetime import datetime, timedelta
 
-from src.config.config_commands import commands_config as commands
-
 def randomNumber(args):
     try:
         min_ = int(args[0])
@@ -62,7 +60,7 @@ def randomNumber(args):
         return str(random.randint(min_, max_))
 	
     except:
-        return "Please use the command correctly: " + commands['!randomNumber']['usage']
+        return "Please use the command correctly: !randomNumber [min] [max]"
 ```
 
 And now if somebody types `!randomNumber 5 10` into the chat, the bot will respond with a pseudo-random number between 5 and 10.

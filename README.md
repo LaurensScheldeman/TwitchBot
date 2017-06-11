@@ -65,4 +65,4 @@ def randomNumber(args):
         return "Please use the command correctly: " + commands['!randomNumber']['usage']
 ```
 
-And now if somebody types `!random 5 10` into the chat, the bot will respond with a pseudo-random number between 5 and 10.
+And now if somebody types `!randomNumber 5 10` into the chat, the bot will respond with a pseudo-random number between 5 and 10.

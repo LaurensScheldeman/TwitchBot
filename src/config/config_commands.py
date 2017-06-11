@@ -1,13 +1,14 @@
 
 from src.config.config_bankheist import bankheist_config
+from src.config.config_pointsystem import pointsystem_config
 
 # To add a command:
 #
 #   '!<command>': {
-#       'cooldown': <cooldown time in seconds, type zero if none>,
 #       'return': <return type, type a string if plain text, type function if there is logic to it>,
-#       'argc': <number of arguments taken by the command, only if return type is command>,
-#       'arg_username': <True/False, if true, will pass the username as first argument>,
+#       'cooldown': <cooldown time in seconds, if not defined, no cooldown is set>,
+#       'argc': <number of arguments taken by the command, only if return type is command, default 0>,
+#       'arg_username': <True/False, if true, will pass the username as first argument, default False>,
 #       'usage': <short description about how to send the arguments of a command>
 #   }
 #
@@ -15,27 +16,39 @@ from src.config.config_bankheist import bankheist_config
 #   with the logic to determin the return and logic of the command
 
 commands_config = {
-
+    # Example commands
     '!ping': {
-        'cooldown': 30,
-        'return': '!pong'
+        'return': '!pong',
+        'cooldown': 30
     },
-
     '!randomNumber': {
-        'cooldown': 10,
+        'usage': '!randomNumber [min] [max] (only full integers)',
         'return': 'command',
-        'argc': 2,
-        'arg_username': False,
-        'usage': '!randomNumber [min] [max] (only full integers)'
+        'cooldown': 10,
+        'argc': 2
     },
 
     # Bankheist
     bankheist_config['activation_command']: {
-        'cooldown': 0, # Time between two persons that enter, should be zero.
+        'usage': bankheist_config['activation_command_usage'],
         'return': 'command',
         'argc': 1,
+        'arg_username': True
+    },
+
+    # Pointsystem
+    pointsystem_config['check_balance_command']: {
+        'return': 'command',
+        'cooldown': pointsystem_config['check_balance_cooldown'],
         'arg_username': True,
-        'usage': '!bankheist [bet] (full integer)'
+    },
+    pointsystem_config['transfer_command']: {
+        'usage': pointsystem_config['transfer_command'] + ' [username] + [amount]',
+        'return': 'command',
+        'argc': 2,
+        'arg_username': True
     }
+
+
 
 } # End of commands

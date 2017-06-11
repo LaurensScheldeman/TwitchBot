@@ -1,3 +1,31 @@
-[22:18] lovely_santa: <santaBot> successfully joined the channel.
-[22:18] lovely_santa: !bankheist 5000
-[22:18] lovely_santa: lovely_santa has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5,000 Shreckles.
+[13:03] :tmi.twitch.tv 001 lovely_santa :Welcome, GLHF!
+[13:03] :tmi.twitch.tv 002 lovely_santa :Your host is tmi.twitch.tv
+[13:03] :tmi.twitch.tv 003 lovely_santa :This server is rather new
+[13:03] :tmi.twitch.tv 004 lovely_santa :-
+[13:03] :tmi.twitch.tv 375 lovely_santa :-
+[13:03] :tmi.twitch.tv 372 lovely_santa :You are in a maze of twisty passages, all alike.
+[13:03] :tmi.twitch.tv 376 lovely_santa :>
+[13:03] :lovely_santa!lovely_santa@lovely_santa.tmi.twitch.tv JOIN #lovely_santa
+[13:03] :lovely_santa.tmi.twitch.tv 353 lovely_santa = #lovely_santa :lovely_santa
+[13:03] :lovely_santa.tmi.twitch.tv 366 lovely_santa #lovely_santa :End of /NAMES list
+[13:03] lovely_santa: <santaBot> successfully joined the channel.
+[13:03] 
+lovely_santa: !shreckles
+[13:03] -- Command is not on cooldown.
+[13:03] lovely_santa: You have currently 910 Shreckles.
+[13:03] 
+lovely_santa: !give santaBot 1
+[13:03] -- Command is not on cooldown.
+[13:03] lovely_santa: Transfered 1 Shreckles from lovely_santa to santabot.
+[13:03] 
+lovely_santa: !shreckles
+[13:03] -- Command is not on cooldown.
+[13:03] lovely_santa: You have currently 909 Shreckles.
+[13:03] 
+lovely_santa: !give santaBot 1000
+[13:03] -- Command is not on cooldown.
+[13:03] lovely_santa: Transfered 1000 Shreckles from lovely_santa to santabot.
+[13:03] 
+lovely_santa: !shreckles
+[13:03] -- Command is not on cooldown.
+[13:03] lovely_santa: You have currently 0 Shreckles.

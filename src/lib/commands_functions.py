@@ -1,7 +1,6 @@
 import time
 import string
 
-#from src.config.config import *
 from src.config.config_commands import commands_config as commands
 
 import importlib
@@ -16,11 +15,22 @@ def get_command_last_used(command):
         commands[command]['last_used'] = 0
         return 0
 
+def get_argc(command):
+    try:
+        return commands[command]['argc']
+    except KeyError:
+        commands[command]['argc'] = 0
+        return 0
+
 def get_usage(command):
     return commands[command]['usage']
 
 def get_command_cooldown(command):
-    return commands[command]['cooldown']
+    try:
+        return commands[command]['cooldown']
+    except KeyError:
+        commands[command]['cooldown'] = 0
+        return 0
 
 def get_cooldown_remaining(command):
 	return int(round(get_command_cooldown(command) - (time.time() - get_command_last_used(command))))
@@ -32,14 +42,26 @@ def is_on_cooldown(command):
     return True if time.time() -  get_command_last_used(command) < get_command_cooldown(command) else False
 
 def check_has_args(command):
-    return True if commands[command]['argc'] and commands[command]['argc'] != 0 else False
+    try:
+        return commands[command]['argc']
+    except KeyError:
+        commands[command]['argc'] = 0
+        return 0
 
 def check_pass_username_arg(command):
-    return True if commands[command]['arg_username'] else False
+    try:
+        return commands[command]['arg_username']
+    except KeyError:
+        commands[command]['arg_username'] = False
+        return False
 
 def check_has_correct_args(message, command):
-	message = message.split(' ')
-	return True if len(message) - 1 == commands[command]['argc'] else False
+    message = message.split(' ')
+    try:
+        return len(message) - 1 >= commands[command]['argc']
+    except KeyError:
+        commands[command]['argc'] = 0
+        return len(message) - 1 >= commands[command]['argc']
 
 def check_returns_function(command):
 	return True if 'return' in commands[command].keys() and commands[command]['return'] == 'command' else False

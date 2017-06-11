@@ -10,7 +10,7 @@ To connect to your channel you need to set the configuration to connect to your 
 # Adding new commands
 You're going to need to know basic Python if you want to add your own commands. Open up `src/config/config_commands.py`. There are examples of pre-made commands in there as examples, and some gambling games. The cooldown parameter is the amount of times inbetween the command can be used in seconds, if you don't want a limit, don't put in the cooldown parameter, or set it to 0.
 
-If your command is only going to return a string, ex - `!ping` returns `!pong`, you will havee to place the string you wish to be returned to the user in the `return` parameter. For example, if you wanted to create a command such as this and limit it to being used ever 30 seconds, you would add in:
+If your command is only going to return a string, ex - `!ping` returns `!pong`, you will have to place the string you wish to be returned to the user in the `return` parameter. For example, if you wanted to create a command such as this and limit it to being used ever 30 seconds, you would add in:
 
 ```python
 '!ping': {

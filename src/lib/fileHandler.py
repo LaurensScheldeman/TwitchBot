@@ -4,6 +4,8 @@ import json
 import string
 from datetime import datetime
 
+from src.config.config import config
+
 def create_empty_file(filepath):
     # Creates an empty file, override the file if it already exists
     directory = os.path.dirname(filepath)
@@ -57,7 +59,18 @@ def write_json(filepath, data):
 def read_json(filepath):
     if check_file_exist(filepath):
         with open(filepath, 'r') as f:
-            data = json.load(f)
+            try:
+                data = json.load(f)
+            except ValueError, e:
+                if e.message != "No JSON object could be decoded":
+                    raise ValueError, e
+                else:
+                    if config['debug']:
+                        message = '-- Invalid json file: ' + filepath
+                        print(message)
+                        if config['save_log']:
+                            append_to_file(config['save_log_filepath'], message, use_time=True)
+                    data = {}
     else:
         data = {}
     return data

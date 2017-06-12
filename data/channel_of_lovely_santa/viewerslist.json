@@ -1,1 +1,16 @@
-{"santabot99": {"username": "santabot99", "authorisation": "moderator", "points": 2407, "join_data": "06/12/2017 10:52", "last_seen": "06/12/2017 14:11"}, "lovely_santa": {"username": "lovely_santa", "authorisation": "moderator", "points": 593743, "join_data": "06/10/2017 13:22", "last_seen": "06/12/2017 14:11"}}
+{
+    "lovely_santa": {
+        "authorisation": "moderator", 
+        "join_data": "06/10/2017 13:22", 
+        "last_seen": "06/12/2017 23:45", 
+        "points": 677076, 
+        "username": "lovely_santa"
+    }, 
+    "santabot99": {
+        "authorisation": "moderator", 
+        "join_data": "06/12/2017 10:52", 
+        "last_seen": "06/12/2017 23:45", 
+        "points": 85740, 
+        "username": "santabot99"
+    }
+}

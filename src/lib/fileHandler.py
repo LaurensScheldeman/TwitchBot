@@ -50,11 +50,11 @@ def check_file_exist(filepath):
 def write_json(filepath, data):
     if check_file_exist(filepath):
         with open(filepath, 'w') as f:
-            json.dump(data, f)
+            json.dump(data, f, indent=4, sort_keys=True)
     else:
         create_empty_file(filepath)
         with open(filepath, 'w') as f:
-            json.dump(data, f)
+            json.dump(data, f, indent=4, sort_keys=True)
 
 def read_json(filepath):
     if check_file_exist(filepath):

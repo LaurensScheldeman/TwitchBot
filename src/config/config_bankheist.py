@@ -9,6 +9,8 @@ bankheist_config = {
     # SECTION 1 : ENTERY OF HEIST #
     ###############################
     'activation_command': '!bankheist', # This need to be the same as in config_commands.py
+    'activation_command_usage': '!bankheist [bet] (full integer)',
+
     'max_bet': 5000, # Set to zero for unlimited
     'currency_name': pointsystem_config['currency_name'],
     'time_to_enter': 120, # Time (in seconds) between first entery and start of the heist
@@ -86,7 +88,7 @@ bankheist_config = {
     # SECTION 4 : COOLDOWN TIMER  #
     ###############################
     'cooldown_time': 15, # Time between game outcome and start of next game entery in minutes
-    'cooldown_message': 'The cops are on high alert afther last job, we hav to lay low for a bit. Call me again afther @currect_cooldown@ minutes.',
+    'cooldown_message': 'The cops are on high alert afther last job, we have to lay low for a bit. Call me again afther @cooldown_time_left@ minutes.',
     'cooldown_over_message': 'Looks like the cops have given up the search ... the banks are ripe for hittig!'
 
 } # End of bankheist_config

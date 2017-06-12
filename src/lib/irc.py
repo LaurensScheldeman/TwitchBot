@@ -57,8 +57,9 @@ class irc:
             return self.read_message()
 
         temp = line.split(":",2)
-        user = temp[1].split("!", 1)[0]
-        message = temp[2].split("\r",1)[0]
+        user = unicode(temp[1].split("!", 1)[0], errors='ignore')
+        message = unicode(temp[2].split("\r",1)[0], errors='ignore')
+
         return user, message
 
     def __open_socket_connection(self):

@@ -15,7 +15,7 @@ class irc:
         return self.__socket
 
     def join_channel(self):
-        self.__open_socket()
+        self.__open_socket_connection()
         self.__socket.settimeout(None)
 
         self.__socket.send("PASS " + self.__config['oauth_password'] + "\r\n")
@@ -46,22 +46,22 @@ class irc:
             print("-- Sent: " + message)
 
     def read_message(self):
-        if not self.__message_buffer:
-            self.__add_buffer()
+        while not self.__message_buffer:
+            self.__read_data += self.__socket.recv(self.__config['socket_buffer_size'])
+            self.__message_buffer = string.split(self.__read_data, "\n")
+            self.__read_data = self.__message_buffer.pop()
         line = self.__message_buffer.pop(0)
 
-        if self.__check_for_ping(line):
-            return "PING", "PONG"
+        if line[:4] == "PING": # Check for PING
+            self.__socket.send(line.replace("PING", "PONG") + "\r\n")
+            return self.read_message()
 
         temp = line.split(":",2)
         user = u'%s' % temp[1].split("!", 1)[0]
         message = u'%s' % temp[2].split("\r",1)[0]
         return user, message
 
-    def check_ping_message(self, user, message):
-        return True if (user == "PING") and (message == "PONG") else False
-
-    def __open_socket(self):
+    def __open_socket_connection(self):
         self.__socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__socket.settimeout(10)
 
@@ -73,14 +73,3 @@ class irc:
                 if self.__config['save_log']:
                     fileHandler.append_to_file(self.__config['save_log_filepath'], \
                         '-- Cannot connect to server (%s:%s).' % (self.__config['server'], self.__config['port']), use_time=True)
-
-    def __add_buffer(self):
-        self.__read_data += self.__socket.recv(self.__config['socket_buffer_size'])
-        self.__message_buffer = string.split(self.__read_data, "\n")
-        self.__read_data = self.__message_buffer.pop()
-
-    def __check_for_ping(self, line):
-        if line[:4] == "PING":
-            self.__socket.send(line.replace("PING", "PONG") + "\r\n")
-            return True
-        return False

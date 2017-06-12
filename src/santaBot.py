@@ -35,57 +35,56 @@ class SantaBot:
         while True:
             user, message = self.__irc.read_message()
 
-            if not self.__irc.check_ping_message(user, message):
-                if self.__config['save_log']:
-                    fileHandler.append_to_file(self.__config['save_log_filepath'], '\n' + user + ": " + message, use_time=True)
-                if self.__config['debug']:
-                    print('\n' + user + ': ' + message)
+            if self.__config['save_log']:
+                fileHandler.append_to_file(self.__config['save_log_filepath'], '\n' + user + ": " + message, use_time=True)
+            if self.__config['debug']:
+                print('\n' + user + ': ' + message)
 
-                # check if message is a command
-                if commands.is_valid_command(message.split(' ')[0]):
-                    command = message.split(' ')[0]
-                    # check if command is on cooldown
-                    if commands.is_on_cooldown(command):
-                        if self.__config['debug']:
-                            debug_message = "-- Command is on cooldown. (" + \
-                                str(commands.get_cooldown_remaining(command)) + "s remaining)"
-                            print(debug_message)
-                            if self.__config['save_log']:
-                                fileHandler.append_to_file(self.__config['save_log_filepath'], debug_message, use_time=True)
-                    else: # No cooldown
-                        if self.__config['debug']:
-                            debug_message = "-- Command is not on cooldown."
-                            print(debug_message)
-                            if self.__config['save_log']:
-                                fileHandler.append_to_file(self.__config['save_log_filepath'], debug_message, use_time=True)
+            # check if message is a command
+            if commands.is_valid_command(message.split(' ')[0]):
+                command = message.split(' ')[0]
+                # check if command is on cooldown
+                if commands.is_on_cooldown(command):
+                    if self.__config['debug']:
+                        debug_message = "-- Command is on cooldown. (" + \
+                            str(commands.get_cooldown_remaining(command)) + "s remaining)"
+                        print(debug_message)
+                        if self.__config['save_log']:
+                            fileHandler.append_to_file(self.__config['save_log_filepath'], debug_message, use_time=True)
+                else: # No cooldown
+                    if self.__config['debug']:
+                        debug_message = "-- Command is not on cooldown."
+                        print(debug_message)
+                        if self.__config['save_log']:
+                            fileHandler.append_to_file(self.__config['save_log_filepath'], debug_message, use_time=True)
 
-                        # check if the command returns a function
-                        if commands.check_returns_function(command):
-                            if commands.check_has_correct_args(message, command):
-                                args = message.split(' ')
+                    # check if the command returns a function
+                    if commands.check_returns_function(command):
+                        if commands.check_has_correct_args(message, command):
+                            args = message.split(' ')
 
-                                while len(args) > (commands.get_argc(command) + 1):
-                                    del args[len(args)-1]
+                            while len(args) > (commands.get_argc(command) + 1):
+                                del args[len(args)-1]
 
-                                # args[0] is the command, change it to user if needed, delete otherwise
-                                if commands.check_pass_username_arg(command):
-                                    args[0] = user
-                                else:
-                                    del args[0]
-
-                                result = commands.pass_to_function(command, args)
-                                commands.update_last_used(command)
-
-                                if result:
-                                    self.__irc.send_message(result)
-
+                            # args[0] is the command, change it to user if needed, delete otherwise
+                            if commands.check_pass_username_arg(command):
+                                args[0] = user
                             else:
-                                self.__irc.send_message("Please use command correctly: " + commands.get_usage(command.split(' ')[0]))
+                                del args[0]
 
-                        # check if the command has a return that is not a function
-                        elif commands.check_has_return(command):
-                            result = commands.get_return(command)
+                            result = commands.pass_to_function(command, args)
                             commands.update_last_used(command)
 
-                            if result and type(result) is str:
+                            if result:
                                 self.__irc.send_message(result)
+
+                        else:
+                            self.__irc.send_message("Please use command correctly: " + commands.get_usage(command.split(' ')[0]))
+
+                    # check if the command has a return that is not a function
+                    elif commands.check_has_return(command):
+                        result = commands.get_return(command)
+                        commands.update_last_used(command)
+
+                        if result and type(result) is str:
+                            self.__irc.send_message(result)

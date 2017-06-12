@@ -24,8 +24,14 @@ commands_config = {
     '!randomNumber': {
         'usage': '!randomNumber [min] [max] (only full integers)',
         'return': 'command',
-        'cooldown': 10,
+        'cooldown': 30,
         'argc': 2
+    },
+
+    # Custom commands
+    '!bots': {
+        'return': 'I\'m here BloodTrail ',
+        'cooldown': 30
     },
 
     # Bankheist

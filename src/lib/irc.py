@@ -57,8 +57,8 @@ class irc:
             return self.read_message()
 
         temp = line.split(":",2)
-        user = u'%s' % temp[1].split("!", 1)[0]
-        message = u'%s' % temp[2].split("\r",1)[0]
+        user = temp[1].split("!", 1)[0]
+        message = temp[2].split("\r",1)[0]
         return user, message
 
     def __open_socket_connection(self):

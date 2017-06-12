@@ -5,11 +5,11 @@ pointsystem_config = {
 
     # Number of points added when a user watch for an hour.
     # Adding interval depends on config_userdata -> update_rate.
-    'points_over_time': 1000,
+    'points_over_time': 1000000,
 
     # Check balance
     'check_balance_command': '!shreckles',
-    'check_balance_cooldown': 5,
+    'check_balance_cooldown': 2,
     'check_balance_message': 'You have currently @amount@ @currency_name@.',
 
     # Transfering points to an other user

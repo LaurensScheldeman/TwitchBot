@@ -30,7 +30,7 @@ bankheist_config = {
     'level_1_bank_name': 'ShredNation Municipal Bank',
     'level_2_bank_name': 'ShredNation City Bank',
     'level_3_bank_name': 'ShredNation State Bank',
-    'level_4_bank_name': 'ShredNation National Reserver',
+    'level_4_bank_name': 'ShredNation National Reserve',
     'level_5_bank_name': 'ShredNation Federal Reserve',
 
     # Make sure each level has a greater max user limit than the level before
@@ -63,7 +63,7 @@ bankheist_config = {
     'multi_succes_1-33%': 'The crew suffered major losses as they engaged the SWAT backup. The remaining crew barely made it scoring @totalwinamount@ @currency_name@ from the vault.',
     'multi_fail': 'SWAT teams nearby stormed the bank and killed the entire crew. Not a single soul survived...',
 
-    'heist_outcome': 'The heist peyouts are:',
+    'heist_outcome': 'The heist payouts are:',
 
     ###############################
     # SECTION 4: PAYOUT RATES     #

@@ -1,21 +1,293 @@
-[13:50] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
-[13:50] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
-[13:50] :tmi.twitch.tv 003 santabot99 :This server is rather new
-[13:50] :tmi.twitch.tv 004 santabot99 :-
-[13:50] :tmi.twitch.tv 375 santabot99 :-
-[13:50] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
-[13:50] :tmi.twitch.tv 376 santabot99 :>
-[13:50] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #lovely_santa
-[13:50] :santabot99.tmi.twitch.tv 353 santabot99 = #lovely_santa :santabot99
-[13:50] :santabot99.tmi.twitch.tv 366 santabot99 #lovely_santa :End of /NAMES list
-[13:50] santaBot99: <santaBot> successfully joined the channel.
-[13:52] 
+[18:24] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
+[18:24] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
+[18:24] :tmi.twitch.tv 003 santabot99 :This server is rather new
+[18:24] :tmi.twitch.tv 004 santabot99 :-
+[18:24] :tmi.twitch.tv 375 santabot99 :-
+[18:24] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
+[18:24] :tmi.twitch.tv 376 santabot99 :>
+[18:24] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #shredguy99
+[18:24] :santabot99.tmi.twitch.tv 353 santabot99 = #shredguy99 :santabot99
+[18:24] :santabot99.tmi.twitch.tv 366 santabot99 #shredguy99 :End of /NAMES list
+[18:24] santaBot99: 
+[18:24] 
+jms_02: @Smarty0 pretty sure backwards but idk
+[18:24] 
+thewesdude: what!
+[18:24] 
+thewesdude: not enough shreckles!
+[18:24] 
+thewesdude: !shredpaper
+[18:24] 
+shredbot99: The Shred Nation has shredded 4564 pieces of paper... Make sure the shredder doesn't overheat.
+[18:24] 
+shredbot99: Great job shredding thewesdude! You just received a bonus of 422 Shreckles.
+[18:25] 
+dy5l3x14: a gate sends multiple signals if a train isn't going fast enough Wes
+[18:25] 
+coolhandcody: !message @TheWesDude
+[18:25] 
+lovely_santa: wes, message is 20K shreckles
+[18:25] 
+shredbot99: Sorry coolhandcody. You need more Shreckles to run that command!
+[18:25] 
+daigakisei: !message TesWesDude
+[18:25] 
+shredbot99: daigakisei has a message for you sir.
+[18:25] 
+lovely_santa: i was gonna do that diagakisei
+[18:25] 
+thewesdude: Santa that needs to be fixed then!
+[18:25] 
+coolhandcody: damn that's an expensive message
+[18:25] 
+jms_02: !skrilla
+[18:25] 
+shredbot99: jms_02 You're rolling large with 28,121 Shreckles!
+[18:25] 
+intertoothh: a:D
+[18:25] 
+intertoothh: :D
+[18:25] 
+marc_intosh: and a gate also sends a signal if a player runs through (or nearby fast enough)
+[18:26] 
+daigakisei: @lovely_santa you can still do it, i like that frase.
+[18:26] 
+lovely_santa: once is enough ;)
+[18:26] 
+dy5l3x14: gates are just terrible for sending signals :P
+[18:26] 
+dy5l3x14: not reliable enough
+[18:26] 
+thewesdude: have the gate open on a signal then
+[18:26] 
+marc_intosh: and if the gate is closed? the train will smash through then
+[18:27] 
+voske_123: wohoo got the multiplayer for Kerbal Space Program working
+[18:27] 
+voske_123: :p
+[18:27] 
+marc_intosh: I wish gates would send different signals for trains and players
+[18:27] 
+dy5l3x14: it does look like a tick timing issue yeah :P
+[18:27] 
+lovely_santa: otherwise i rephrase?
+[18:28] 
+marc_intosh: nice voske
+[18:28] 
+lovely_santa: send the green signal to the station, so the train will leave, when train has left and green = 1 (this green=1 need to have a tick or 2 ticks delay), then send the signal to your memory cell on top
+[18:28] 
+coolhandcody: @Voske_123 good luck with that, my CPU just flips ma bird and laughs when i try to launch a rocket
+[18:29] 
+coolhandcody: flips me a*
+[18:29] 
+jms_02: @CoolHandCody i know the feeling
+[18:29] -- Updating userdata, this can take a second.
+[18:29] -- Done updating userdata.
+[18:29] 
+marc_intosh: what cpu do you have? a single core? :D
+[18:30] 
+lovely_santa: marc, if you have 1 core, with 8 logic cores, you'll be fine
+[18:31] 
+lovely_santa: most likely that won't exist ;)
+[18:31] 
+intertoothh: how do you mp in ksp?
+[18:31] 
+lovely_santa: i'll design one
+[18:31] 
+voske_123: @CoolHandCody played a bit yesterday wtith the DMP mod, and added the syncrio today, gonna test it later on if it work
+[18:31] 
+eastborn: back
+[18:31] 
+voske_123: today i playd the syncrio mod and that worked well
+[18:31] 
+coolhandcody: i7 4600u @Marc_Intosh
+[18:31] 
+lovely_santa: wb Eastborn
+[18:31] 
+voske_123: yesterday the dmp
+[18:31] 
+marc_intosh: I mean KSP needs a core 2 duo minimum. that's 10 years old.
+[18:31] 
+eastborn: @CoolHandCody no K? :D
+[18:31] 
+eastborn: as in unlocked for overclocking :D
+[18:32] 
+voske_123: lol
+[18:32] 
+intertoothh: @ShredGuy99 i think its the PICNIC error!
+[18:32] 
+coolhandcody: negative
+[18:32] 
+jms_02: @intertoothh you mean panicBasket panicBasket panicBasket panicBasket
+[18:32] 
+intertoothh: might be PEBCAK
+[18:32] 
+intertoothh: otherwise
+[18:32] 
+marc_intosh: layer 8 problem
+[18:32] 
+voske_123: @intertoothh DMP mod and with Syncrio u can synch the science and progress together
+[18:32] 
+eastborn: OUCH
+[18:32] 
+voske_123: so u build a space agency togethere
+[18:32] 
+eastborn: RIP SYSTEM
+[18:33] 
+voske_123: if u want we can test it out @intertoothh
+[18:33] 
+intertoothh: i dont have KSP
+[18:33] 
+voske_123: ah ok :'(
+[18:33] 
+marc_intosh: intertoothh get it! it's worth!
+[18:33] 
+voske_123: #blamedaroy
+[18:33] 
+eastborn: XD
+[18:33] 
+voske_123: @Marc_Intosh if u want to play it just pm me
+[18:34] 
+coolhandcody: @Marc_Intosh it's worth it if you like pain in your life
+[18:34] 
+intertoothh: :D
+[18:34] 
+the1wolf34: what is shred trying to do?
+[18:34] 
+marc_intosh: why pain?
+[18:34] 
+voske_123: nah i think shredguy needs to play a bit of ksp to relax
+[18:34] 
+voske_123: maybe in the multiplayer version it would be easier
+[18:34] 
+coolhandcody: @Marc_Intosh brain bending mind melting neurologic pain
+[18:34] 
+voske_123: !message
+[18:34] 
+shredbot99: voske_123 has a message for you sir.
+[18:34] 
+jms_02: this is why i want a ingame computer console for programming, combinators hurt my brain
+[18:34] 
+eastborn: @shred why not cycle over stations on ticks and and process each station and determine to send train like that?
+[18:34] 
+eastborn: !punch
+[18:34] -- Updating userdata, this can take a second.
+[18:34] 
+shredbot99: Wake up!
+[18:34] -- Done updating userdata.
+[18:34] 
+lovely_santa: decrease the signal by 1 each station that has a train for that type of train, like we said
+[18:35] 
+shredbot99: Find out how many Shreckles you've accumulated by typing in !skrilla or !shreckles
+[18:35] 
+eastborn: yes, thats how timers work :D
+[18:35] 
+eastborn: its pretty easy
+[18:35] 
+marc_intosh: :D
+[18:36] 
+shredbot99: Looks like the cops have given up the search ... the banks are ripe for hitting!
+[18:36] 
+ppvolto: @shredguy99 172%92=1 :P
+[18:36] 
+eastborn: !bankheist 5000
+[18:36] -- Command is not on cooldown.
+[18:36] santaBot99: eastborn has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5,000 Shreckles.
+[18:36] 
+shredbot99: eastborn has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Buy-in top's out at 5,000 Shreckles. Type !bankheist [x] to enter.
+[18:36] 
+thewesdude: !skrilla
+[18:36] 
+shredbot99: thewesdude You're rolling large with 9,255 Shreckles!
+[18:36] 
+marc_intosh: !bankheist 50000
+[18:36] -- Command is not on cooldown.
+[18:36] santaBot99: With this crew, we can now hit the ShredNation City Bank. Lets see if we can get a bigger crew to hit the ShredNation State Bank!
+[18:36] 
+shredbot99: With this crew, we can now hit the ShredNation City Bank. Lets see if we can get a bigger crew to hit the ShredNation State Bank!
+[18:36] 
+mo__ron: !bankheist 5000
+[18:36] -- Command is not on cooldown.
+[18:36] santaBot99: Oh yeah! With this crew, we can now hit the ShredNation State Bank. Lets see if we can get a bigger crew to hit the ShredNation National Reserve!
+[18:36] 
 lovely_santa: !bankheist 5000
-[13:52] -- Command is not on cooldown.
-[13:52] santaBot99: lovely_santa has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5,000 Shreckles.
-[13:54] santaBot99: Alright guys, check your guns. We are storming into the ShredNation Municipal Bank through all entrances. Let's get the cash and get out before the cops get here.
-[13:54] santaBot99: lovely_santa executed the heist flawlessly, sneaking into the ShredNation Municipal Bank through the back entrance and looting 10,000 Shreckles from the vault.
-[13:54] 
-lovely_santa: !bankheist 5000
-[13:54] -- Command is not on cooldown.
-[13:54] santaBot99: The cops are on high alert afther last job, we hav to lay low for a bit. Call me again afther 15 minutes.
+[18:36] -- Command is not on cooldown.
+[18:36] 
+thewesdude: !shredpaper
+[18:36] 
+shredbot99: The Shred Nation has shredded 4565 pieces of paper... Make sure the shredder doesn't overheat.
+[18:36] 
+smarty0: !bankheist 5000
+[18:36] -- Command is not on cooldown.
+[18:36] 
+shredbot99: Great job shredding thewesdude! You just received a bonus of 321 Shreckles.
+[18:36] 
+sventek70: !bankheist 5000
+[18:36] -- Command is not on cooldown.
+[18:36] 
+shredbot99: Oh yeah! With this crew, we can now hit the ShredNation State Bank. Lets see if we can get a bigger crew to hit the ShredNation National Reserve!
+[18:36] 
+eastborn: dammit @lovely_santa stop this madness
+[18:37] 
+choumiko: !bankheist 5000
+[18:37] -- Command is not on cooldown.
+[18:37] santaBot99: Hell yeah! We can now hit the ShredNation National Reserve. A few more, and we could hit the ShredNation Federal Reserve!
+[18:37] 
+lovely_santa: it might be the last test
+[18:37] 
+lovely_santa: it's almost working
+[18:37] 
+marc_intosh: !ignore santabot99
+[18:37] 
+lztrain10: !bankheist 3000
+[18:37] -- Command is not on cooldown.
+[18:37] 
+eastborn: !bots
+[18:37] 
+eastborn: Kappa
+[18:37] 
+lovely_santa: not implemented yet
+[18:37] 
+monkranos: !bankheist 5000
+[18:37] -- Command is not on cooldown.
+[18:37] 
+eastborn: darn, that should be the first thing :D
+[18:37] 
+lovely_santa: no, !ping was the first
+[18:37] 
+marc_intosh: !ping
+[18:37] -- Command is not on cooldown.
+[18:37] santaBot99: !pong
+[18:37] 
+thewesdude: if your problem is that when you receive 1 signal from the mine, and you release a train it does 2 negatives, then just double it so it adds 2 signals not just 1?
+[18:37] 
+lovely_santa: dammit marc
+[18:38] 
+eastborn: did it crash @lovely_santa ? XD
+[18:38] 
+lovely_santa: no it didn't
+[18:38] 
+lovely_santa: at least i've a cooldown on that ping command
+[18:38] santaBot99: Alright guys, check your guns. We are storming into the ShredNation National Reserve through all entrances. Let's get the cash and get out before the cops get here.
+[18:38] 
+eastborn: !pong
+[18:38] 
+eastborn: Kappa
+[18:38] 
+smarty0: !ping
+[18:38] -- Command is not on cooldown.
+[18:38] santaBot99: !pong
+[18:38] 
+marc_intosh: !roulette
+[18:38] 
+shredbot99: The options for Roulette are: red, black, green, odd, even. Add your bets using !roulette [betamount] [option]. e.g. !roulette 150 green
+[18:38] 
+smarty0: Kappa
+[18:38] santaBot99: The crew suffered major losses as they engaged the SWAT backup. The remaining crew barely made it scoring 50,000 Shreckles from the vault.
+[18:38] santaBot99: The heist payouts are: eastborn: 25,000 (5,000) - monkranos: 25,000 (5,000)
+[18:39] 
+coolhandcody: !roulette 60 red
+[18:39] 
+marc_intosh: !roulette 500 even
+[18:39] 
+shredbot99: Roulette is now closed for betting. Good luck to all players!

@@ -1,28 +1,252 @@
-[13:56] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
-[13:56] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
-[13:56] :tmi.twitch.tv 003 santabot99 :This server is rather new
-[13:56] :tmi.twitch.tv 004 santabot99 :-
-[13:56] :tmi.twitch.tv 375 santabot99 :-
-[13:56] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
-[13:56] :tmi.twitch.tv 376 santabot99 :>
-[13:56] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #lovely_santa
-[13:56] :santabot99.tmi.twitch.tv 353 santabot99 = #lovely_santa :santabot99
-[13:56] :santabot99.tmi.twitch.tv 366 santabot99 #lovely_santa :End of /NAMES list
-[13:56] santaBot99: <santaBot> successfully joined the channel.
-[13:56] 
+[18:42] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
+[18:42] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
+[18:42] :tmi.twitch.tv 003 santabot99 :This server is rather new
+[18:42] :tmi.twitch.tv 004 santabot99 :-
+[18:42] :tmi.twitch.tv 375 santabot99 :-
+[18:42] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
+[18:42] :tmi.twitch.tv 376 santabot99 :>
+[18:42] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #shredguy99
+[18:42] :santabot99.tmi.twitch.tv 353 santabot99 = #shredguy99 :santabot99
+[18:42] :santabot99.tmi.twitch.tv 366 santabot99 #shredguy99 :End of /NAMES list
+[18:42] santaBot99: 
+[18:42] 
+lovely_santa: !bots
+[18:42] -- Command is not on cooldown.
+[18:42] santaBot99: I'm here BloodTrail 
+[18:43] 
+lovely_santa: now satisfied eastborn :p
+[18:43] 
+ppvolto: @shredguy99 is each train or train station registerey with a id? when its each trainstation send a signal when T / ID = 1
+[18:44] 
+eastborn: !bots
+[18:44] -- Command is not on cooldown.
+[18:44] santaBot99: I'm here BloodTrail 
+[18:44] 
+eastborn: Kappa
+[18:44] 
+intertoothh: 2^T=A then check if A && 2^Train id = 2^Train id... i gues if you want to have multiple trains id's in 1 signal.
+[18:45] 
+lovely_santa: inter, doesn't that run out of hand with train ID's like 900??
+[18:45] 
+intertoothh: yes it will
+[18:45] 
+intertoothh: :D
+[18:45] 
+marc_intosh: it does already with 80
+[18:45] 
+shredbot99: Thanks to keryja for hosting the Shred Nation with 7 viewers! Welcome new viewers. Now everyone be sure to follow keryja at www.twitch.tv/keryja
+[18:45] 
+intertoothh: 80 bits number hmmm :D
+[18:45] 
+lovely_santa: damn
+[18:45] 
+lovely_santa: welcome keryja and viewers 🎅 /
+[18:46] 
+keryja: Hey Shred & Chat, what's up o/
+[18:46] 
+marc_intosh: o/
+[18:46] 
+coolhandcody: howdy @Keryja
+[18:46] 
+smarty0: hey Keryja
+[18:46] 
+lovely_santa: keryja, shred is figuring out how to logic the trains to leave when a station requests a train
+[18:46] 
+lovely_santa: !uptime
+[18:46] 
+shredbot99: Holy Shit... We've been streaming for 1 Hour, 45 Minutes, 45 Seconds
+[18:46] 
+lovely_santa: we are doing that for the past 1 hour 45 minutes :p
+[18:47] 
+keryja: @lovely_santa so like, when iron drops below a certain point that station sends a signal saying, yo gimme an iron train?
+[18:47] 
+keryja: Pahaha, yeahn circuit network stuff can take a long time
+[18:47] -- Updating userdata, this can take a second.
+[18:47] 
+keryja: I spent more than 3 hours on a balanced unloading station that can accept an arbitrary amount of an arbitrary set of resources
+[18:47] -- Done updating userdata.
+[18:47] 
+lovely_santa: yes keryja
+[18:48] 
+lovely_santa: maybe even also send a train to an outpost when it has enough ore to fill a train
+[18:48] 
+lovely_santa: shred goiing crazy Kappa
+[18:48] 
+coolhandcody: find your happy place Shred
+[18:49] 
+jms_02: if = -86 then something as like an if error statment?
+[18:49] 
+keryja: And then I never used it again because it was too much of a pain to work with xD
+[18:50] 
+kodiakjak: Hey Shredguy and chat cohhHi
+[18:50] 
+marc_intosh: o/
+[18:50] 
+lovely_santa: https://clips.twitch.tv/WildTangentialFlyTheTarFu
+[18:50] 
+intertoothh: @ShredGuy99 i would split this up in 2....Have each station figure out what type of train it has... then 'pulse' the copper need 2, trought all stations... substract 1 if you found a copper train... then go to the next station.
+[18:50] 
+shredbot99: "Multiplayer is definitely best with other people." - Itz_Xantaxia 11/18/2016
+[18:50] 
+jms_02: could someone explain what he is trying to do in the discord?
+[18:50] 
+intertoothh: !message ^
+[18:50] 
+shredbot99: intertoothh has a message for you sir.
+[18:51] 
+eastborn: @ShredGuy99 NEED THAT TIMER
+[18:51] 
+keryja: Heya KodiakJak o/
+[18:51] 
+lovely_santa: yes intertoothh exactly
+[18:51] 
+lovely_santa: !message jms_02 has a question
+[18:51] 
+shredbot99: lovely_santa has a message for you sir.
+[18:52] 
+intertoothh: @ShredGuy99 yes! BUT thats the first part! let the station figure out, ow its train 324 so its a copper train!
+[18:52] 
+lovely_santa: wrong message shred
+[18:52] 
+kodiakjak: Math in the early morning WutFace
+[18:52] 
+jms_02: lovely_santa its fine LOL
+[18:52] -- Updating userdata, this can take a second.
+[18:52] -- Done updating userdata.
+[18:52] 
+intertoothh: jms, yeah i'll join you in discord :D
+[18:52] 
+lovely_santa: !punch jms_02: could someone explain what he is trying to do
+[18:52] 
+shredbot99: Wake up!
+[18:52] 
+marc_intosh: make a combinator array where you input the train ID and it outputs iron ore or copper ore
+[18:53] 
+intertoothh: ^^^
+[18:53] 
+marc_intosh: you'd need a combinator for each train
+[18:53] 
+intertoothh: KIS
+[18:53] 
+lovely_santa: i give up, intertoothh, you can explain :p
+[18:53] 
+marc_intosh: KIS?
+[18:54] 
+theoneadversary: Keep is simple.
+[18:54] 
+theoneadversary: *it
+[18:54] 
+choumiko: KISS, stupid ;)
+[18:54] 
+shredbot99: Looks like the cops have given up the search ... the banks are ripe for hitting!
+[18:54] 
+marc_intosh: if you want to send two trains (or more) don't send them at the same time. send the first train first and then the second one.
+[18:54] 
+itz_xantaxia: g'day sports o/
+[18:55] 
+marc_intosh: o/
+[18:55] 
+shredbot99: Fun & Frivolity Officer Itz_Xantaxia has arrived; Let the Party Begin: 500HP Industrial Shredder and ranked #9 in the Shred Nation!
+[18:55] 
+eastborn: yto xantaxia
+[18:55] 
+marc_intosh: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] santaBot99: marc_intosh has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5,000 Shreckles.
+[18:55] 
+shredbot99: marc_intosh has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Buy-in top's out at 5,000 Shreckles. Type !bankheist [x] to enter.
+[18:55] 
+jms_02: @intertoothh gracias
+[18:55] 
+jerithgeros: Use LTN... :P
+[18:55] 
+thewesdude: the problem is how do you tell the trains which mine to go to
+[18:55] 
+intertoothh: hey Itz_Xantaxia
+[18:55] 
+lovely_santa: 🎅 / it's xantaxia !
+[18:55] 
+mo__ron: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] santaBot99: With this crew, we can now hit the ShredNation City Bank. Lets see if we can get a bigger crew to hit the ShredNation State Bank!
+[18:55] 
+shredbot99: With this crew, we can now hit the ShredNation City Bank. Lets see if we can get a bigger crew to hit the ShredNation State Bank!
+[18:55] 
 lovely_santa: !bankheist 5000
-[13:56] -- Command is not on cooldown.
-[13:56] santaBot99: lovely_santa has started planning a bank heist! Looking for a bigger crew for a bigger score. Join in! Type !bankheist [x] to enter. Buy-in top's out at 5,000 Shreckles.
-[13:58] santaBot99: Alright guys, check your guns. We are storming into the ShredNation Municipal Bank through all entrances. Let's get the cash and get out before the cops get here.
-[13:58] santaBot99: lovely_santa executed the heist flawlessly, sneaking into the ShredNation Municipal Bank through the back entrance and looting 10,000 Shreckles from the vault.
-[14:00] 
-lovely_santa: !bankheist 5000
-[14:00] -- Command is not on cooldown.
-[14:00] santaBot99: The cops are on high alert afther last job, we have to lay low for a bit. Call me again afther 13 minutes.
-[14:01] -- Updating userdata, this can take a second.
-[14:01] -- Done updating userdata.
-[14:06] -- Updating userdata, this can take a second.
-[14:06] -- Done updating userdata.
-[14:11] -- Updating userdata, this can take a second.
-[14:11] -- Done updating userdata.
-[14:13] santaBot99: Looks like the cops have given up the search ... the banks are ripe for hittig!
+[18:55] -- Command is not on cooldown.
+[18:55] santaBot99: Oh yeah! With this crew, we can now hit the ShredNation State Bank. Lets see if we can get a bigger crew to hit the ShredNation National Reserve!
+[18:55] 
+thewesdude: are your mines named uniquely ?
+[18:55] 
+smarty0: hey @Itz_Xantaxia
+[18:55] 
+macblade: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] 
+choumiko: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] 
+shredbot99: Oh yeah! With this crew, we can now hit the ShredNation State Bank. Lets see if we can get a bigger crew to hit the ShredNation National Reserve!
+[18:55] 
+butterbeanky: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] santaBot99: Hell yeah! We can now hit the ShredNation National Reserve. A few more, and we could hit the ShredNation Federal Reserve!
+[18:55] 
+thewesdude: !skrilla
+[18:55] 
+shredbot99: thewesdude You're rolling large with 9,616 Shreckles!
+[18:55] 
+jerithgeros: !bankheist 1000
+[18:55] -- Command is not on cooldown.
+[18:55] 
+itz_xantaxia: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] 
+thewesdude: !bankheist 5000
+[18:55] -- Command is not on cooldown.
+[18:55] 
+lovely_santa: TheWesDude the trains have unique ID's
+[18:55] 
+coolhandcody: !bankheist 100
+[18:55] -- Command is not on cooldown.
+[18:55] 
+thewesdude: are your mines named uniquely
+[18:56] 
+shredbot99: Hell yeah! We can now hit the ShredNation National Reserve. A few more, and we could hit the ShredNation Federal Reserve!
+[18:56] 
+marc_intosh: TheWesDude you close every station except the one you want the train to go to
+[18:56] 
+thewesdude: Marc but what if 1 mine opens when the train is en-route to one already
+[18:56] 
+thewesdude: then you will end up with 2 trains to same mine
+[18:56] 
+marc_intosh: you gotta control the junctions
+[18:57] santaBot99: Alright guys, check your guns. We are storming into the ShredNation National Reserve through all entrances. Let's get the cash and get out before the cops get here.
+[18:57] 
+azazelreborn: WHY -172?
+[18:57] 
+intertoothh: neah
+[18:57] 
+intertoothh: yes shred you need that :D
+[18:57] 
+marc_intosh: no
+[18:57] santaBot99: The crew suffered major losses as they engaged the SWAT backup. The remaining crew barely made it scoring 30,000 Shreckles from the vault.
+[18:57] 
+marc_intosh: why for each station?
+[18:57] 
+intertoothh: or 1 array, and just 'ask' what it is with a pulse
+[18:57] santaBot99: The heist payouts are: thewesdude: 25,000 (5,000) - jerithgeros: 5,000 (1,000)
+[18:57] -- Updating userdata, this can take a second.
+[18:57] -- Done updating userdata.
+[18:57] 
+lovely_santa: yes it works!
+[18:57] 
+marc_intosh: intertoothh yes
+[18:57] 
+intertoothh: then rember that untill it gets a new T
+[18:57] 
+thewesdude: no matter what, if your mines are named the same, you will end up with 2 trains going to the same mine eventually
+[18:58] 
+coolhandcody: you just need a logic chain if _ then _ else if _ then _
+[18:58] 
+itz_xantaxia: #rigged

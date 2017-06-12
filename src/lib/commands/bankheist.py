@@ -1,5 +1,6 @@
 import string
 import random
+import time
 from datetime import datetime, timedelta
 
 from src.lib.timers import InfiniteTimer
@@ -40,6 +41,8 @@ def bankheist(args):
 
         # Able to join, will only join if user placed a valid bet
         bankheist_config['enteries'][user] = user_bet
+        if config['debug']:
+            print('-- ' + user + 'entered heist with a bet of ' + str(bankheist_config['enteries'][user]))
 
         current_enteries = len(bankheist_config['enteries'])
         if current_enteries == 1: # First entery
@@ -90,22 +93,19 @@ def bankheist_outcome():
         succes_multiplier = bankheist_config['level_1_win_multiplier']
     elif number_of_enteries <= bankheist_config['level_2_max_users']:
         succes_chance = bankheist_config['level_2_win']
-        succes_multiplier = bankheist_config['level_1_win_multiplier']
+        succes_multiplier = bankheist_config['level_2_win_multiplier']
     elif number_of_enteries <= bankheist_config['level_3_max_users']:
         succes_chance = bankheist_config['level_3_win']
-        succes_multiplier = bankheist_config['level_1_win_multiplier']
+        succes_multiplier = bankheist_config['level_3_win_multiplier']
     elif number_of_enteries <= bankheist_config['level_4_max_users']:
         succes_chance = bankheist_config['level_4_win']
-        succes_multiplier = bankheist_config['level_1_win_multiplier']
+        succes_multiplier = bankheist_config['level_4_win_multiplier']
     else:
         succes_chance = bankheist_config['level_5_win']
-        succes_multiplier = bankheist_config['level_1_win_multiplier']
+        succes_multiplier = bankheist_config['level_5_win_multiplier']
 
-    # Total amount stolen out of the bank
-    stolen_amount = 0
-
-    # Souls that survived the heist
-    souls_survived = 0
+    stolen_amount = 0 # Total amount stolen out of the bank
+    souls_survived = 0 # Souls that survived the heist
 
     users_dict = fileHandler.read_json(userdata_config['userdata_filename'])
     for user in bankheist_config['enteries'].keys():
@@ -134,17 +134,18 @@ def bankheist_outcome():
             config['irc'].send_message(decode_message(bankheist_config['multi_fail']))
         else:
             if win_rate == 1:
-                config['irc'].send_message(decode_message(bankheist_config['multi_succes_100']))
+                config['irc'].send_message(decode_message(message=bankheist_config['multi_succes_100'], totalwinamount=stolen_amount))
             elif win_rate > (2./3):
-                config['irc'].send_message(decode_message(bankheist_config['multi_succes_34-99%']))
+                config['irc'].send_message(decode_message(message=bankheist_config['multi_succes_34-99%'], totalwinamount=stolen_amount))
             else:
-                config['irc'].send_message(decode_message(bankheist_config['multi_succes_1-33%']))
+                config['irc'].send_message(decode_message(message=bankheist_config['multi_succes_1-33%'], totalwinamount=stolen_amount))
 
             message = bankheist_config['heist_outcome']
             for user in bankheist_config['enteries'].keys():
                 win_amount = bankheist_config['enteries'][user]
                 if win_amount > 0:
                     message += ' '+user+": "+int_to_string(win_amount)+' ('+int_to_string(win_amount/succes_multiplier)+') -'
+            time.sleep(3) # Otherwise it sends it too fast
             config['irc'].send_message(message[:-2])
 
     bankheist_config.pop('enteries', None) # Delete all enteries of current heist

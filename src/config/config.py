@@ -9,7 +9,7 @@ config = {
 
     # Channel to join
     'channel': 'lovely_santa',
-    'entering_message': '<santaBot> successfully joined the channel.',
+    'entering_message': 'I successfully joined the channel.',
 
     # If set to true will display any debug data in console
     'debug': True,

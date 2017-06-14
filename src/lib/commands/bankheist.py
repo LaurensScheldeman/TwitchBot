@@ -33,7 +33,7 @@ def bankheist(args):
         # Bankheist in progress
         return decode_message(message=bankheist_config['late_entery'], user=user)
 
-    elif ((user_bet > 0) or ((bankheist_config['max_bet'] == 0) and (user_bet <= bankheist_config['max_bet']))):
+    elif ((user_bet > 0) and ((bankheist_config['max_bet'] == 0) or (user_bet <= bankheist_config['max_bet']))):
 
         users_dict = fileHandler.read_json(userdata_config['userdata_filename'])
         if not ((user in users_dict.keys()) and (users_dict[user]['points'] >= user_bet)):
@@ -42,7 +42,8 @@ def bankheist(args):
         # Able to join, will only join if user placed a valid bet
         bankheist_config['enteries'][user] = user_bet
         if config['debug']:
-            print('-- ' + user + 'entered heist with a bet of ' + str(bankheist_config['enteries'][user]))
+            print('-- ' + user + 'entered the heist with a bet of ' + \
+                int_to_string(bankheist_config['enteries'][user]) + ' ' + bankheist_config['currency_name'] + '.')
 
         current_enteries = len(bankheist_config['enteries'])
         if current_enteries == 1: # First entery
@@ -109,7 +110,7 @@ def bankheist_outcome():
 
     users_dict = fileHandler.read_json(userdata_config['userdata_filename'])
     for user in bankheist_config['enteries'].keys():
-        if (random.randint(0, 1000000)%10000) < int(succes_chance * 100):
+        if (random.randint(0, 999999)%10000) < int(succes_chance * 100):
             # succes
             users_dict[user]['points'] += bankheist_config['enteries'][user] * (succes_multiplier - 1)
             bankheist_config['enteries'][user] *= succes_multiplier
@@ -151,9 +152,10 @@ def bankheist_outcome():
     bankheist_config.pop('enteries', None) # Delete all enteries of current heist
     bankheist_config['enteries'] = {} # Empty dictionary
     bankheist_config['cooldown_timer_starttime'] = datetime.now()
-    bankheist_config['cooldown_timer'].start()
-    if config['debug']:
-        print('-- heist_cooldown_timer started. (' + str(bankheist_config['cooldown_timer'].seconds) + ' seconds)')
+    if bankheist_config['cooldown_time'] > 0:
+        bankheist_config['cooldown_timer'].start()
+        if config['debug']:
+            print('-- heist_cooldown_timer started. (' + str(bankheist_config['cooldown_timer'].seconds) + ' seconds)')
 
 def bankheist_end_of_cooldown():
     # End of cooldown
@@ -167,7 +169,8 @@ def init_bankheist():
     if not check_init_status():
         bankheist_config['entery_timer'] = InfiniteTimer(bankheist_config['time_to_enter'], bankheist_in_progress)
         bankheist_config['in_progress_timer'] = InfiniteTimer(30, bankheist_outcome)
-        bankheist_config['cooldown_timer'] = InfiniteTimer(bankheist_config['cooldown_time'] * 60, bankheist_end_of_cooldown)
+        if bankheist_config['cooldown_time'] > 0:
+            bankheist_config['cooldown_timer'] = InfiniteTimer(bankheist_config['cooldown_time'] * 60, bankheist_end_of_cooldown)
         bankheist_config.pop('enteries', None) # Delete all enteries of current heist
         bankheist_config['enteries'] = {} # Empty dictionary
         bankheist_config['init_status'] = True

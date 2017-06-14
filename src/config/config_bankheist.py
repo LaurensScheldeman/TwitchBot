@@ -8,7 +8,7 @@ bankheist_config = {
     ###############################
     # SECTION 1 : ENTERY OF HEIST #
     ###############################
-    'activation_command': '!bankheist', # This need to be the same as in config_commands.py
+    'activation_command': '!bankheist',
     'activation_command_usage': '!bankheist [bet] (full integer)',
 
     'max_bet': 5000, # Set to zero for unlimited

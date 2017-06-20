@@ -39,6 +39,12 @@ commands_config = {
         'return': '#yourestupidbye'
     },
 
+    # Active channel commands
+    '!cmd': {
+        'return': 'command',
+        'cooldown': 60
+    },
+
     # Bankheist
     bankheist_config['activation_command']: {
         'usage': bankheist_config['activation_command_usage'],

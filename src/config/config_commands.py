@@ -35,6 +35,9 @@ commands_config = {
         'return': 'I\'m here BloodTrail ',
         'cooldown': 30
     },
+    '!bye': {
+        'return': '#yourestupidbye'
+    },
 
     # Bankheist
     bankheist_config['activation_command']: {
@@ -44,13 +47,13 @@ commands_config = {
         'arg_username': True
     },
 
-    # Roulette
-    roulette_config['activation_command']: {
-        'usage': roulette_config['activation_command_usage'],
-        'return': 'command',
-        'argc': 2,
-        'arg_username': True
-    },
+#    # Roulette
+#    roulette_config['activation_command']: {
+#        'usage': roulette_config['activation_command_usage'],
+#        'return': 'command',
+#        'argc': 2,
+#        'arg_username': True
+#    },
 
     # Pointsystem
     pointsystem_config['check_balance_command']: {

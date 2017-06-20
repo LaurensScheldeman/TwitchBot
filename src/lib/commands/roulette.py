@@ -30,11 +30,15 @@ def roulette(args):
 
         users_dict = fileHandler.read_json(userdata_config['userdata_filename'])
         if not ((user in users_dict.keys()) and (users_dict[user]['points'] >= user_bet)):
+            if config['debug']:
+                print('-- ' + user + 'cannot join roulette with that amount (' + str(user_bet) + ')')
             return '' # Not enough points to bet that much
 
         # Able to join, will only join if user placed a valid bet
         bet_type = check_bet_type(bet_option)
         if bet_type == 'Invalid':
+            if config['debug']:
+                print('-- invalid bet')
             return ''
         if bet_type == 'Number':
             bet_option = int(bet_option)
@@ -48,13 +52,12 @@ def roulette(args):
                 int_to_string(roulette_config['enteries'][user]['bet_amount']) + \
                 ' ' + roulette_config['currency_name'] + ' on ' + roulette_config['enteries'][user]['bet_type'] + \
                 ' ' + roulette_config['enteries'][user]['placed_bet'])
-
         if len(roulette_config['enteries']) == 1:
-            message = roulette_config['entery_start_message']
-            if roulette_config['max_bet'] > 0:
-                message += ' ' + roulette_config['max_entery_message']
-            message += ' ' + roulette_config['entery_help_message']
-            return decode_message(message, user)
+            roulette_config['entery_timer'].start()
+            if config['debug']:
+                print('-- roulette entery timer started'
+
+
     return '' # No message to return
 
 def roulette_in_progress():
@@ -93,7 +96,7 @@ def init_roulette():
     # initialize the bankheist (only happens first time)
     if not check_init_status():
         roulette_config['entery_timer'] = InfiniteTimer(roulette_config['time_to_enter'], roulette_in_progress)
-        roulette_config['in_progress_timer'] = InfiniteTimer(30, roulette_outcome)
+        roulette_config['in_progress_timer'] = InfiniteTimer(300, roulette_outcome)
         roulette_config.pop('enteries', None) # Delete all enteries of current heist
         roulette_config['enteries'] = {} # Empty dictionary
         roulette_config['init_status'] = True

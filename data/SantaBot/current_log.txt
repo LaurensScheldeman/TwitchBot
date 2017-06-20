@@ -1,15 +1,14 @@
-[16:33] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
-[16:33] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
-[16:33] :tmi.twitch.tv 003 santabot99 :This server is rather new
-[16:33] :tmi.twitch.tv 004 santabot99 :-
-[16:33] :tmi.twitch.tv 375 santabot99 :-
-[16:33] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
-[16:33] :tmi.twitch.tv 376 santabot99 :>
-[16:33] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #lovely_santa
-[16:33] :santabot99.tmi.twitch.tv 353 santabot99 = #lovely_santa :santabot99
-[16:33] :santabot99.tmi.twitch.tv 366 santabot99 #lovely_santa :End of /NAMES list
-[16:33] santaBot99: I successfully joined the channel.
-[16:33] 
-lovely_santa: !roulette 500 red
-[16:33] -- Command is not on cooldown.
-[16:33] santaBot99: lovely_santa started a new roulette round, place your bet to play: !roulette [bet] [option]. Bets are limited to 500 Shreckles.For more information, type !roulette help.
+[18:50] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
+[18:50] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
+[18:50] :tmi.twitch.tv 003 santabot99 :This server is rather new
+[18:50] :tmi.twitch.tv 004 santabot99 :-
+[18:50] :tmi.twitch.tv 375 santabot99 :-
+[18:50] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
+[18:50] :tmi.twitch.tv 376 santabot99 :>
+[18:50] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #lovely_santa
+[18:50] :santabot99.tmi.twitch.tv 353 santabot99 = #lovely_santa :santabot99
+[18:50] :santabot99.tmi.twitch.tv 366 santabot99 #lovely_santa :End of /NAMES list
+[18:50] santaBot99: I successfully joined the channel.
+[18:50] 
+lovely_santa: !roulette 500 0
+[18:50] -- Command is not on cooldown.

@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 18. 07. 2017
+  Changes:
+    - Added GUI to the bot
+    - Config files saved as .json files and accessed when needed instead of global variables
+    - With this big change, bankheist and point system are not included [yet]
+  Known bugs:
+    - GUI window sizing is a mess when using on other pc's
+---------------------------------------------------------------------------------------------------
+Version: 0.1.x
+Date: 18. 07. 2017
+  Changes:
+    - Start of changelog
+  Status up till now:
+    - Support of simple return messages
+    - Support of complicated commands (as functions)
+    - Support of cooldown on commands
+    - Support of pointsystem
+    - Support of bankheist game

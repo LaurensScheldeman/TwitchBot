@@ -1,15 +1,20 @@
-[20:37] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
-[20:37] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
-[20:37] :tmi.twitch.tv 003 santabot99 :This server is rather new
-[20:37] :tmi.twitch.tv 004 santabot99 :-
-[20:37] :tmi.twitch.tv 375 santabot99 :-
-[20:37] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
-[20:37] :tmi.twitch.tv 376 santabot99 :>
-[20:37] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #lovely_santa
-[20:37] :santabot99.tmi.twitch.tv 353 santabot99 = #lovely_santa :santabot99
-[20:37] :santabot99.tmi.twitch.tv 366 santabot99 #lovely_santa :End of /NAMES list
-[20:37] santaBot99: I successfully joined the channel.
-[20:37] 
-lovely_santa: !cmd
-[20:37] -- Command is not on cooldown.
-[20:37] santaBot99: Active channel commands: !bankheist !shreckles !bots !cmd !ping !randomNumber !give !bye
+[10:56] :tmi.twitch.tv 001 santabot99 :Welcome, GLHF!
+[10:56] :tmi.twitch.tv 002 santabot99 :Your host is tmi.twitch.tv
+[10:56] :tmi.twitch.tv 003 santabot99 :This server is rather new
+[10:56] :tmi.twitch.tv 004 santabot99 :-
+[10:56] :tmi.twitch.tv 375 santabot99 :-
+[10:56] :tmi.twitch.tv 372 santabot99 :You are in a maze of twisty passages, all alike.
+[10:56] :tmi.twitch.tv 376 santabot99 :>
+[10:56] :santabot99!santabot99@santabot99.tmi.twitch.tv JOIN #lovely_santa
+[10:56] :santabot99.tmi.twitch.tv 353 santabot99 = #lovely_santa :santabot99
+[10:56] :santabot99.tmi.twitch.tv 366 santabot99 #lovely_santa :End of /NAMES list
+[10:56] santaBot99: I successfully joined the channel.
+[10:56] lovely_santa: test
+[10:56] lovely_santa: 123
+[10:56] lovely_santa: !ping
+[10:56] -- Command is not on cooldown.
+[10:56] santaBot99: !pong
+[10:56] lovely_santa: !randomNumber 1 1958458
+[10:56] -- Command is not on cooldown.
+[10:56] santaBot99: 1525662
+[10:56] lovely_santa: lol

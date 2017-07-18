@@ -1,0 +1,31 @@
+{
+    "!TheLostColony": {
+        "cooldown": 15, 
+        "return": "Read the story of this playthrough and mod list at  https://docs.google.com/document/d/14N5RU8TAy5srdwg9tcMImGBYwIH7eClqvh_QZXu1_s0/edit?usp=sharing"
+    }, 
+    "!bots": {
+        "cooldown": 30, 
+        "return": "I'm here BloodTrail"
+    }, 
+    "!bye": {
+        "return": "#yourestupidbye"
+    }, 
+    "!cmd": {
+        "cooldown": 30, 
+        "return": "command"
+    }, 
+    "!ping": {
+        "cooldown": 30, 
+        "return": "!pong"
+    }, 
+    "!randomNumber": {
+        "argc": 2, 
+        "cooldown": 30, 
+        "return": "command", 
+        "usage": "!randomNumber [min] [max]"
+    }, 
+    "!thelostcolony": {
+        "cooldown": 30, 
+        "return": "Read the story of this playthrough and mod list at https://docs.google.com/document/d/14N5RU8TAy5srdwg9tcMImGBYwIH7eClqvh_QZXu1_s0/edit?usp=sharing"
+    }
+}

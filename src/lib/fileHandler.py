@@ -4,7 +4,6 @@ import json
 import string
 from datetime import datetime
 
-from src.config.config import config
 
 def create_empty_file(filepath):
     # Creates an empty file, override the file if it already exists
@@ -65,10 +64,10 @@ def read_json(filepath):
                 if e.message != "No JSON object could be decoded":
                     raise ValueError, e
                 else:
-                    if config['debug']:
+                    if debug:
                         message = '-- Invalid json file: ' + filepath
                         print(message)
-                        if config['save_log']:
+                        if save_log:
                             append_to_file(config['save_log_filepath'], message, use_time=True)
                     data = {}
     else:

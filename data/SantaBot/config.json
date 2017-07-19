@@ -1,15 +1,8 @@
 {
-    "botname": "santaBot99", 
-    "botoauth": "oauth:s4w4um7r0qbrinzjpp2arr3ebnve7i", 
-    "channel": "lovely_santa", 
-    "clientID": "kojf4m4eg5ic1si8qd4k55sluvpj7s", 
-    "clientoauth": "kvf0rfqhjtpng3kl0j8scujifwdle5", 
     "debug": true, 
     "entering_message": "I successfully joined the channel.", 
     "port": 6667, 
     "save_log": true, 
     "server": "irc.twitch.tv", 
-    "socket_buffer_size": 1024, 
-    "streamgame": "Factorio", 
-    "streamtitle": "testing bots"
+    "socket_buffer_size": 1024
 }
